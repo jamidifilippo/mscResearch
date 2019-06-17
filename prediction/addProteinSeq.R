@@ -5,7 +5,7 @@ if(length(args)!=3){
  stop("incorrect number of args")
 }
 
-library(Biostrings)
+library(seqinr)
 
 
 #https://bioinfo.umassmed.edu/bootstrappers/guides/main/r_writeFasta.html
@@ -21,7 +21,7 @@ writeFasta<-function(data, fileConn){
 
 
 x <- function(file1=args[1], file2=args[2], out=args[3]){
-  fasta <- readDNAStringSet(file1)
+  fasta <- read.fasta(file1)
   names <- read.delim(file2, header=FALSE)
   fileConn <- file(out, "w")
 
@@ -37,10 +37,11 @@ x <- function(file1=args[1], file2=args[2], out=args[3]){
 
   for(k in 1:length(z)){
     index <- grep(z[k], names(fasta), value=FALSE)  
-    f <- c(f, toString(fasta[index]))
+    s <- toupper(paste(fasta[[index]], collapse = ""))
+    f <- c(f, toString(s))
    }
 
-  fasta <- fasta[index]
+  #fasta <- fasta[index]
 
   require(dplyr)
   
