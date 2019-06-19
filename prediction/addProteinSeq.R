@@ -1,4 +1,4 @@
-#!/usr/bin/env Rscript
+ #!/usr/bin/env Rscript
 args = commandArgs(TRUE)
 
 if(length(args)!=3){ 
@@ -25,10 +25,10 @@ x <- function(file1=args[1], file2=args[2], out=args[3]){
   names <- read.delim(file2, header=FALSE)
   fileConn <- file(out, "w")
 
-  y <- names[2:nrow(names),1]
+  y <- names[1:nrow(names),1]
   z <- c()
 
-  for(i in 1:(nrow(names)-1)){
+  for(i in 1:(nrow(names))){
     z <- c(z, strsplit(toString(y[[i]]), " ")[[1]][1])
   }
 
