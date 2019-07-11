@@ -12,10 +12,7 @@ data
 
 
 ```{r}
-v <- unlist(strsplit(toString(data[3,2]), " "))
-l <- length(v)
-v <- v[2:l]
-
+v <- c()
 ortho <- c()
 for(i in 1:length(data$V1)){
   v <- unlist(strsplit(toString(data[i,2]), " "))
