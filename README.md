@@ -13,3 +13,21 @@ The "exact match" pattern search was run with
   prediction/patternSearch.R <in> <out>
   
 Analysis of the generated files was performed in python jupyter notebooks listed under the results directory.
+
+
+
+Input files can be downloaded from:
+Hydra
+DNA: https://research.nhgri.nih.gov/hydra/download/assembly/Hm105_Dovetail_Assembly_1.0.fa.gz
+protein: https://research.nhgri.nih.gov/hydra/download/genemodels_proteins/hydra2.0_genemodels.aa.gz
+gff: https://research.nhgri.nih.gov/hydra/download/genemodels_gff3/hydra2.0_genemodels.gff3.gz
+
+Dmel
+DNA: ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/fasta/dmel-all-chromosome-r6.29.fasta.gz
+protein: (translated from DNA)
+gtf: ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gtf/dmel-all-r6.29.gtf.gz
+
+Hsap
+DNA: ftp://ftp.ensembl.org/pub/release-96/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+protein: ftp://ftp.ensembl.org/pub/release-96/fasta/homo_sapiens/pep/Homo_sapiens.GRCh38.pep.abinitio.fa.gz
+gff: ftp://ftp.ensembl.org/pub/release-96/gff3/homo_sapiens/Homo_sapiens.GRCh38.96.abinitio.gff3.gz
