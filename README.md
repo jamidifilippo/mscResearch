@@ -29,9 +29,9 @@ Dmel
 
 DNA: ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/fasta/dmel-all-chromosome-r6.29.fasta.gz
 
-protein: (translated from DNA)
+protein: ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/fasta/dmel-all-translation-r6.29.fasta.gz
 
-gtf: ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gtf/dmel-all-r6.29.gtf.gz
+
 
 Hsap
 
